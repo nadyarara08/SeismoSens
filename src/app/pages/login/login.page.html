@@ -1,0 +1,13 @@
+<!-- login.page.html -->
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="login()">Login</ion-button>
+  <ion-button expand="block" fill="clear" routerLink="/register">Belum punya akun? Register</ion-button>
+</ion-content>
