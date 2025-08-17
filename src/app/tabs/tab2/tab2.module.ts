@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { PetaPage } from './peta.page';
-import { PetaPageRoutingModule } from './peta-routing.module';
+import { Tab2Page } from './tab2.page';
+import { Tab2PageRoutingModule } from './tab2-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PetaPageRoutingModule
+    Tab2PageRoutingModule
   ],
-  declarations: [PetaPage]
+  declarations: [Tab2Page]
 })
-export class PetaPageModule {}
+export class Tab2PageModule {}

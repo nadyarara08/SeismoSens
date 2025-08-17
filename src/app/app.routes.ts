@@ -19,7 +19,7 @@ export const routes: Routes = [
   },
   {
     path: 'tab4',
-    loadComponent: () => import('./tab4/tab4.page').then( m => m.Tab4Page)
+    loadComponent: () => import('./tabs/tab4/tab4.page').then( m => m.Tab4Page)
   },
   {
     path: 'tab4',
@@ -39,7 +39,7 @@ export const routes: Routes = [
   },
   {
     path: 'register',
-    loadComponent: () => import('./register/register.page').then( m => m.RegisterPage)
+    loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
   },
   {
     path: 'register',
@@ -58,11 +58,7 @@ export const routes: Routes = [
     loadComponent: () => import('./services/services.page').then( m => m.ServicesPage)
   },
   {
-    path: 'firebase',
-    loadComponent: () => import('./firebase/firebase.page').then( m => m.FirebasePage)
-  },
-  {
     path: 'peta',
-    loadComponent: () => import('./tabss/peta/peta.page').then( m => m.PetaPage)
+    loadComponent: () => import('./tabs/peta/peta.page').then( m => m.PetaPage)
   },
 ];
