@@ -8,6 +8,11 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'tab1',
+        loadChildren: () =>
+          import('./tab1/tab1.module').then(m => m.Tab1PageModule),
+      },
+      {
         path: 'beranda',
         loadChildren: () => import('./beranda/beranda.module').then(m => m.BerandaPageModule)
       },
@@ -31,6 +36,7 @@ const routes: Routes = [
     ]
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
